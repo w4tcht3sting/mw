@@ -1,0 +1,168 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>Google Codelabs ハンズオン</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="google-codelabs-"
+                  title="Google Codelabs ハンズオン"
+                  environment="web"
+                  feedback-link="">
+    
+      <google-codelab-step label="Summary" duration="0">
+        <p>Google Codelabs形式のコンテンツを作って公開するまで</p>
+<p>URL</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Category" duration="0">
+        <p>Codelabs</p>
+<p>Status</p>
+<p>Published</p>
+<p>Feedback Link</p>
+<p>https://github.com/k-tomoyasu/codelab-handson</p>
+<p>Author</p>
+<p>k-tomoyasu</p>
+<p>はじめに</p>
+<p>What you&#39;ll learn</p>
+<p>Google Codelabsとは</p>
+<p>作成・公開の流れ</p>
+<p>Codelab &amp; GitHub Pagesのメリット</p>
+<p>サンプル</p>
+<p>準備</p>
+<p>claatのインストール</p>
+<p>プレビュー用のchrome extensionインストール</p>
+<p>Google Docsで作成</p>
+<p>記法のサンプル</p>
+<p>記法の公式ドキュメント</p>
+<p>Docsを書き上げたら</p>
+<p>新規作成</p>
+<p>claatでの認証</p>
+<p>更新</p>
+<p>Markdownで作成</p>
+<p>Github Pagesで公開</p>
+<p>最後に</p>
+<p>このCodelabへのプルリク大歓迎です!</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="はじめに" duration="0">
+        <p>Duration: 3:00</p>
+<p>What you&#39;ll learn</p>
+<p>Google Codelabs形式のコンテンツ作成手順</p>
+<p>GitHub Pagesでの公開手順</p>
+<p> このCodelabではGoogle Codelabを作成し、Github Pagesで公開するまでを環境構築から行なっていきます。</p>
+<p>Google Codelabsとは</p>
+<p>様々な実装のガイドラインやチュートリアルをハンズオン形式で学ぶコンテンツです。Googleが誰でもCodelabを作れるようにツールを公開しており、良い感じのコンテンツを簡単な編集作業で作ることができます。</p>
+<p>Google Codelabs</p>
+<p>https://codelabs.developers.google.com/</p>
+<p>日本語のコードラボ集</p>
+<p>https://codelabs.developers.google.com/lang-ja/</p>
+<p>作成・公開の流れ</p>
+<p>Google Docsでドキュメント作成</p>
+<p>CLIツールのclaatで静的コンテンツを生成</p>
+<p>2.のコンテンツをWebに公開(このCodelabではGithub Pagesを利用)</p>
+<p>Codelab &amp; GitHub Pagesのメリット</p>
+<p>今回紹介するコンテンツの作成・公開には以下のようなメリットがあると考えています。</p>
+<p>コンテンツの体裁が統一される。しかも綺麗。見た目大事</p>
+<p>masterをpushしたら即公開なので楽</p>
+<p>GitHubで修正のプルリクを受け付けられる</p>
+<p>サンプル</p>
+<p>入力したGoogle Docs</p>
+<p>出力したコンテンツを置いているリポジトリ</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="準備" duration="0">
+        <p>Duration: 5:00</p>
+<p>claatのインストール</p>
+<p>claatとはGoogleが公開しているGolang製のCodelab作成用CLIツールです。</p>
+<p>claatのGitHubリポジトリからダウンロードできます。</p>
+<p>https://github.com/googlecodelabs/tools/releases/</p>
+<p>Golangの環境がある場合は、go getでもOKです。</p>
+<p>go get github.com/googlecodelabs/tools/claat</p>
+<p>プレビュー用のchrome extensionインストール</p>
+<p>Google Docsで作成中のCodelabをプレビューするchrome extensionがあります。作業効率がかなり上がるので、以下リンク先から入れておきます。</p>
+<p>https://chrome.google.com/webstore/detail/preview-codelab/lhojjnijnkiglhkggagbapfonpdlinji</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Google Docsで作成" duration="0">
+        <p>Duration: 5:00</p>
+<p>まずは新規のGoogle Docsを作成します。Google DocsでのCodelab用の記法が定められており、これに従うことでわりと簡単にリッチなコンテンツが作れます。</p>
+<p>記法については以下のリンク先が分かりやすいです。ここでは割愛して、このDocsをコピペしてしまいます。</p>
+<p>記法のサンプル</p>
+<p>記法の公式ドキュメント</p>
+<p>Docsを書き上げたら</p>
+<p>新規作成</p>
+<p>Docsを書き上げたら、claatを使ってhtmlを出力していきます。</p>
+<p>claat export {GOOGLE_DOCS_ID}</p>
+<p>claatのexportコマンドのパラメータにDocsのIDを渡すことで出力されます。</p>
+<p>DocsのURL「https://docs.google.com/document/d/hogehoge/」の「hogehoge」部分がIDとなります。今回作成しているDocsのURLは「https://docs.google.com/document/d/1MxMjBX-KfNBqZuYNT-SbinOcac6GN8Lz6ojfFSlCCxI」なので、IDは「1MxMjBX-KfNBqZuYNT-SbinOcac6GN8Lz6ojfFSlCCxI」となります。このIDを使って以下のclaat exportコマンドを実行するとindex.htmlをはじめとした成果物が出力されます。</p>
+<p>claat export 1MxMjBX-KfNBqZuYNT-SbinOcac6GN8Lz6ojfFSlCCxI</p>
+<p>claatでの認証</p>
+<p>最初にexportする時にはGoogleアカウントの認証が求められます。CLIの指示の通りに実施すればOKです。</p>
+<p>更新</p>
+<p>claatのv2.2.0ではバグ?でupdateコマンドが失敗してしまいます</p>
+<p>claatにはupdateコマンドがあるのですが、現在期待通りに動作しないのでexportコマンドによってDocsの更新を反映します。毎回DocsのIDを指定してexportを実行するのは面倒なので、Makefileなりスクリプトなりに書くなどすると楽だと思います。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Markdownで作成" duration="0">
+        <p>Duration: 1:00</p>
+<p>markdownでも作れるそうです。差分管理をがっつりやりたい・好きなエディタで編集したいなどの要求にマッチしていそうですが、Docsで作る方が楽なのでここでは紹介しません(できません)。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Github Pagesで公開" duration="0">
+        <p>Duration: 5:00</p>
+<p>出力したCodelabコンテンツをWebに公開します。ここではGiHhub Pagesでの公開を進めていきます。</p>
+<p>まずは、ここまでの成果物をコミットしてリポジトリにpushします。ルートディレクトリに「index.html」が置かれていることを確認してください。</p>
+<p>pushが成功したら、Githubリポジトリの「Settings」からGitHub Pagesの公開設定を行いま.す。</p>
+<p>Settingページに遷移したら、Github Pagesのセクションの「Source」で「master brach」を選択します。</p>
+<p>選択すると以下のようにGitHub PagesのURLが出力されます。</p>
+<p>これで完了です！</p>
+<p>https://k-tomoyasu.github.io/codelab-handson/にCodelabが公開されています。</p>
+<p>最後に</p>
+<p>Duration: 1:00</p>
+<p> Codelabを作成してGithub Pagesで公開するまでの流れをはここまでです。</p>
+<p>ご指摘などあれば是非issueの登録やプルリクをお願いいたします。</p>
+<p>このCodelabへのプルリク大歓迎です!</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
